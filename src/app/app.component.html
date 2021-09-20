@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 style="text-align: center;">Datos del Estudiante</h1>
+      <h4>Nombre: {{nombre}}</h4>
+      <h4>carné: {{carnet}}</h4>
+      <h4>Docente: {{docente}}</h4>
+      <h4>Segundo Examen Parcial</h4>
+    </div>
+
+    <div class="col-md-6">
+      <h1 style="text-align: center;">Calculadora</h1>
+      <br>
+      <input type="number" class="form-control" placeholder="Ingrese numero 1" id="num1" [(ngModel)]="num1">
+      <br>
+      <input type="number" class="form-control" placeholder="Ingrese numero 2" id="num2" [(ngModel)]="num2">
+      <h1>EL RESULTADO ES: {{resultado}}</h1> 
+      <br>
+        <span><button type="button" class="btn btn-primary" (click)="suma()" style="margin-right:20px;">SUMA</button></span>
+        <span><button type="button" class="btn btn-primary" (click)="resta()" style="margin-right:20px;">RESTA</button></span>
+        <span><button type="button" class="btn btn-primary" (click)="multiplicacion()" style="margin-right:20px;">MULTIPLICACION</button></span>
+        <span> <button type="button" class="btn btn-primary" (click)="division()" style="margin-right:20px;">DIVISION</button></span>
+    </div>
+  </div>
+</div>
